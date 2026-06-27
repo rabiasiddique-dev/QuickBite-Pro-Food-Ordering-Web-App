@@ -175,18 +175,18 @@ export const LandingPage: React.FC = () => {
               transition={{ duration: 0.6, delay: 0.1 }}
               className="space-y-4"
             >
-              <Heading as="h1" className="text-[58px] leading-[68px] font-heading font-medium text-slate-900 dark:text-white">
+              <Heading as="h1" className="text-4xl md:text-[58px] leading-tight md:leading-[68px] font-heading font-medium text-slate-900 dark:text-white">
                 Savor the Elite Taste of <br />
                 <span className="bg-gradient-to-r from-primary via-orange-500 to-amber-500 bg-clip-text text-transparent">
                   QuickBite Pro
                 </span>
               </Heading>
               
-              <div className="h-12 mt-2 text-[32px] font-heading font-medium text-slate-600 dark:text-slate-300 flex items-center justify-center lg:justify-start gap-3">
+              <div className="h-12 mt-2 text-2xl md:text-[32px] font-heading font-medium text-slate-600 dark:text-slate-300 flex items-center justify-center lg:justify-start gap-2 md:gap-3">
                 <span>Craving</span>
-                <span className="text-[#FF7A30] flex items-center min-w-[250px]">
+                <span className="text-[#FF7A30] flex items-center min-w-[180px] md:min-w-[250px]">
                   {typingText}
-                  <span className="w-0.5 h-8 bg-[#FF7A30] ml-1 animate-[pulse_1s_infinite]"></span>
+                  <span className="w-0.5 h-6 md:h-8 bg-[#FF7A30] ml-1 animate-[pulse_1s_infinite]"></span>
                 </span>
               </div>
             </motion.div>
@@ -195,7 +195,7 @@ export const LandingPage: React.FC = () => {
               initial={{ opacity: 0, y: 30 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.2 }}
-              className="text-[20px] font-body font-[400] leading-[34px] text-slate-500 dark:text-slate-400 max-w-[550px] mx-auto lg:mx-0"
+              className="text-base md:text-[20px] font-body font-[400] leading-relaxed md:leading-[34px] text-slate-500 dark:text-slate-400 max-w-[550px] mx-auto lg:mx-0 px-4 md:px-0"
             >
               Order from premium local restaurants, track your meals with a live timeline, and manage your kitchen dashboard. Crafted with modern glassmorphism UI for food lovers.
             </motion.p>
@@ -238,7 +238,7 @@ export const LandingPage: React.FC = () => {
                 rotateY: coords.x / 2,
                 transformStyle: 'preserve-3d'
               }}
-              className="relative w-80 h-80 sm:w-[420px] sm:h-[420px] lg:ml-10 p-6"
+              className="relative w-[280px] h-[280px] sm:w-[420px] sm:h-[420px] lg:ml-10 p-4 md:p-6 mx-auto lg:mx-0 mt-8 lg:mt-0"
             >
               {/* Backglow */}
               <div className="absolute inset-0 bg-primary/25 rounded-full blur-[60px] transform -translate-y-5" />
